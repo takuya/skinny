@@ -27,7 +27,7 @@ class App
 		$this->routing_rules["GET"] = array();
 		$this->routing_rules["POST"] = array();
 		$this->routing_rules["404"] = array();
-		$this->path = !empty($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : $_SERVER['SCRIPT_URI'];
+		$this->path = !empty($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : "/";
 		$this->is_post  = ($_SERVER["REQUEST_METHOD"] == "POST");
 		$this->is_get   = ($_SERVER["REQUEST_METHOD"] == "GET");
 		$this->set_default_404();
